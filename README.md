@@ -15,13 +15,8 @@ Adds two new computed fields to `purchase.order.line`:
 
 ## `purchase_order_supplier_product_fields`
 
-**PLANNED**
-
 Adds a `supplier_product_code` field to `purchase.order.line`, computed based upon
 entries in the `product_id.seller_ids` field.
-
-This will start with a very naive algorithm, and as requirements or R&D find better ways
-this will be refined.
 
 # Copyright and License
 
