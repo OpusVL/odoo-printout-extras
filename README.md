@@ -13,7 +13,7 @@ Adds two new computed fields to `purchase.order.line`:
 * `product_sku` - the default code from the chosen product
 * `description_without_sku` - the `name` field with the string `[product_sku]` stripped off
 
-## `purchase_order_supplier_product_code_fields`
+## `purchase_order_supplier_product_fields`
 
 **PLANNED**
 
