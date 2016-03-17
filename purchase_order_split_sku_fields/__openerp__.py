@@ -36,6 +36,7 @@
     'images': [
     ],
     'depends': [
+        'purchase',
     ],
     'data': [
     ],
