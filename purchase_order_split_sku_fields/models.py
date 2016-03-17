@@ -8,11 +8,13 @@ class PurchaseOrderLine(models.Model):
     description_without_sku = fields.Char(
         compute="_description_without_sku_compute",
         readonly=True,
+        string='Description without our product code',
     )
 
     product_sku = fields.Char(
         related=['product_id', 'default_code'],
         readonly=True,
+        string='Our Product Code',
     )
 
     @api.depends('name', 'product_sku')
