@@ -15,6 +15,8 @@ Adds two new computed fields to `purchase.order.line`:
 
 ## `purchase_order_supplier_product_code_field`
 
+**PLANNED**
+
 Adds a `supplier_product_code` field to `purchase.order.line`, computed based upon
 entries in the `product_id.seller_ids` field.
 
