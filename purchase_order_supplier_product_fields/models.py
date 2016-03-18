@@ -14,4 +14,4 @@ class PurchaseOrderLine(models.Model):
     @api.one
     def _supplier_product_code_compute(self):
         sellers = self.product_id.seller_ids.filtered(lambda seller: seller.name == self.partner_id)
-        self.supplier_product_code = sellers and sellers[0].product_code
+        self.supplier_product_code = sellers[0].product_code if sellers else False
