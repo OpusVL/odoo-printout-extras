@@ -1,10 +1,19 @@
 
 """Split SKU common code.
+
+
+Example:
+
+    class StockMove(models.Model, SplitSKUFieldsMixin):
+        _inherit = 'stock.move'
+
 """
 
 from openerp import fields, api
 
 class SplitSKUFieldsMixin(object):
+    """This is the mixin suitable for most models this functionality is applicable to
+    """
     description_without_sku = fields.Char(
         compute="_description_without_sku_compute",
         readonly=True,
